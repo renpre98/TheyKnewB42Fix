@@ -1,0 +1,12 @@
+module TheyKnew
+{
+	sound UseTestStrip
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/Unstuckkitchenknife.ogg,
+            
+        }
+    }
+}

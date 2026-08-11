@@ -1,0 +1,8 @@
+module Base {
+    model TheyKnew_ViralTestingKitBox
+	{
+		mesh = WorldItems/Parcel_Present_3,
+		texture	= WorldItems/Medications/ViralTestingKitBox_Fix,
+		scale = 0.125,
+    }
+}

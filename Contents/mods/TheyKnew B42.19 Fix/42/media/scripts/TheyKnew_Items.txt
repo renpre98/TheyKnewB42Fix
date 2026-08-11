@@ -1,0 +1,197 @@
+module TheyKnew
+{
+	imports
+	{
+		Base
+	}
+	
+	item Zomboxolone
+    {
+        DisplayCategory 	= FirstAid,
+		Weight				= 0.2,
+		ItemType			= base:drainable,
+        UseDelta			= 0.1,
+		UseWhileEquipped	= FALSE,
+		KeepOnDeplete 		= FALSE,
+		DisplayName			= Zomboxolone,
+		Icon				= Zomboxolone,
+		Tooltip 			= Tooltip_Zomboxolone,
+		WorldStaticModel 	= TheyKnew_Zomboxolone,
+		Medical 			= TRUE,
+    }
+	
+	item ZomboxolonePill
+	{
+		DisplayName		 	= ZomboxolonePill,
+		DisplayCategory 	= FirstAid,
+		ItemType 			= base:food,
+		Weight 				= 0.01,
+		Icon 				= ZomboxolonePill,
+		CantBeFrozen 		= TRUE,
+		CustomContextMenu 	= Take,
+		EatType 			= popcan,
+		HungerChange 		= 0,
+		OnEat 				= TheyKnew.ZomboxoloneTakePills,
+		Tooltip 			= Tooltip_Zomboxolone,
+		WorldStaticModel 	= Antibiotics,
+		EatTime 			= 5,
+	}
+	
+	item Zomboxycycline
+    {
+        DisplayCategory 	= FirstAid,
+		Weight				= 0.2,
+		ItemType			= base:drainable,
+        UseDelta			= 0.1,
+		UseWhileEquipped	= FALSE,
+		KeepOnDeplete 		= FALSE,
+		DisplayName			= Zomboxycycline,
+		Icon				= Zomboxycycline,
+		Tooltip 			= Tooltip_Zomboxycycline,
+		WorldStaticModel 	= TheyKnew_Zomboxycycline,
+		Medical 			= TRUE,
+    }
+	
+	item ZomboxycyclinePill
+	{
+		DisplayName		 	= ZomboxycyclinePill,
+		DisplayCategory 	= FirstAid,
+		ItemType 			= base:food,
+		Weight 				= 0.01,
+		Icon 				= ZomboxycyclinePill,
+		CantBeFrozen 		= TRUE,
+		CustomContextMenu 	= Take,
+		EatType 			= popcan,
+		HungerChange 		= 0,
+		OnEat 				= TheyKnew.ZomboxycyclineTakePills,
+		Tooltip 			= Tooltip_Zomboxycycline,
+		WorldStaticModel 	= Antibiotics,
+		EatTime 			= 5,
+	}
+
+	item Zomboxivir
+    {
+        DisplayCategory 	= FirstAid,
+		Weight				= 0.01,
+        ItemType			= base:food,
+		HungerChange 		= +10,
+		ThirstChange 		= +10,
+		UseWhileEquipped	= FALSE,
+        DisplayName			= Zomboxivir,
+        Icon				= Zomboxivir,
+		Tooltip 			= Tooltip_Zomboxivir,
+		Medical 			= TRUE,
+		CustomContextMenu   = Break_Ampule,
+		EatType				= popcan,
+		OnEat 				= TheyKnew.OnEat_Zomboxivir,
+		CustomEatSound 		= BreakAmpule,
+        WorldStaticModel	= Tweezers,
+    }
+	
+	item MysteriousHazmat 
+	{
+		DisplayName 		= Mysterious Hazmat,
+		DisplayCategory 	= Clothing,
+        ItemType 			= base:clothing,
+        Icon 				= MysteriousHazmat,    
+        BloodLocation 		= Trousers;Jumper;Head;Neck;Hands;Shoes,
+        BodyLocation 		= FullSuitHead,
+		ClothingItem 		= TheyKnew_MysteriousHazmat,
+        RunSpeedModifier 	= 0.85,
+        ScratchDefense 		= 25,
+        BiteDefense 		= 25,
+        Insulation 			= 0.65,
+        WindResistance 		= 0.9,
+		Tags 				= HazmatSuit;SCBA;IgnoreZombieDensity,
+        WorldStaticModel 	= Hazmat_Ground,
+		FabricType 			= Leather,
+		Tags 				= RipClothingLeather,
+	}
+	
+	item MysteriousSatchel
+    {
+        DisplayCategory 		= Bag,
+        WeightReduction			= 80,
+        Weight					= 1,
+		ClothingItemExtra 		= MysteriousSatchel,
+        ClothingItemExtraOption = FannyPack_WearBack,
+        ItemType				= base:container,
+        Capacity				= 8,
+        DisplayName				= Tactical Satchel,
+        Icon 					= MysteriousSatchel,
+        CanBeEquipped 			= Back,
+        OpenSound   			= OpenBag,
+        CloseSound   			= CloseBag,
+        PutInSound   			= PutItemInBag,
+        ClothingItem 			= TheyKnew_MysteriousSatchel,
+        BloodLocation 			= Bag,
+		BodyLocation 			= theyknew:Back2,
+		CanBeEquipped 			= FannyPackBack,
+        RunSpeedModifier 		= 0.99,
+        ReplaceInSecondHand 	= TheyKnew_MysteriousSatchel_LHand holdingbagleft,
+        ReplaceInPrimaryHand 	= TheyKnew_MysteriousSatchel_RHand holdingbagright,
+        WorldStaticModel 		= Satchel_Ground,
+    }
+
+	item ViralTestingKit
+    {
+        DisplayCategory 	= FirstAid,
+		Weight				= 1.0,
+		ItemType			= base:drainable,
+        UseDelta			= 0.1,
+		UseWhileEquipped	= FALSE,
+		KeepOnDeplete 		= FALSE,
+		DisplayName			= ViralTestingKit,
+		Icon				= ViralTestingKit,
+		Tooltip 			= Tooltip_ViralTestingKit,
+		WorldStaticModel 	= TheyKnew_ViralTestingKitBox,
+		Medical 			= TRUE,
+    }
+
+	item ViralTestingStrip
+    {
+        DisplayCategory 	= FirstAid,
+		Weight				= 0.1,
+		ItemType			= base:food,
+        UseDelta			= 0.1,
+		UseWhileEquipped	= FALSE,
+		KeepOnDeplete 		= FALSE,
+		DisplayName			= ViralTestingStrip,
+		Icon				= ViralTestingKitNeutral,
+		Tooltip 			= Tooltip_ViralTestingStrip,
+		WorldStaticModel 	= Tweezers,
+		Medical 			= TRUE,
+		CustomContextMenu   = Use_Test_Strip,
+		EatType				= popcan,
+		OnEat 				= TheyKnew.OnEat_ViralTestingStrip,
+		CustomEatSound 		= FirstAidApplyAlcohol,
+    }
+	item ViralTestingStripPositive
+    {
+        DisplayCategory 	= FirstAid,
+		Weight				= 0.1,
+		ItemType			= base:normal,
+        UseDelta			= 0.1,
+		UseWhileEquipped	= FALSE,
+		KeepOnDeplete 		= FALSE,
+		DisplayName			= ViralTestingStrip,
+		Icon				= ViralTestingKitPositive,
+		Tooltip 			= Tooltip_ViralTestingStripPositive,
+		WorldStaticModel 	= Tweezers,
+		Medical 			= TRUE,
+    }
+	item ViralTestingStripNegative
+    {
+        DisplayCategory 	= FirstAid,
+		Weight				= 0.1,
+		ItemType			= base:normal,
+        UseDelta			= 0.1,
+		UseWhileEquipped	= FALSE,
+		KeepOnDeplete 		= FALSE,
+		DisplayName			= ViralTestingStrip,
+		Icon				= ViralTestingKitNegative,
+		Tooltip 			= Tooltip_ViralTestingStripNegative,
+		WorldStaticModel 	= Tweezers,
+		Medical 			= TRUE,
+    }
+}

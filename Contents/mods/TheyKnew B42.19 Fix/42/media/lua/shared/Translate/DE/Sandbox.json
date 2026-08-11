@@ -1,0 +1,13 @@
+{
+    "Sandbox_TheyKnew": "They Knew",
+    "Sandbox_TheyKnew_HazmatSpawnChance": "Spawn-Häufigkeit für Schutzanzug-Zombies",
+    "Sandbox_TheyKnew_HazmatSpawnChance_tooltip": "Spawn-Häufigkeit für Schutzanzug-Zombies",
+    "Sandbox_TheyKnew_ZomboxoloneLootChance": "Fundrate für Zomboxolon.",
+    "Sandbox_TheyKnew_ZomboxoloneLootChance_tooltip": "Drop-Chance von 100",
+    "Sandbox_TheyKnew_ZomboxycyclineLootChance": "Fundrate für Zomboxycyclin.",
+    "Sandbox_TheyKnew_ZomboxycyclineLootChance_tooltip": "Drop-Chance von 100",
+    "Sandbox_TheyKnew_ZomboxivirLootChance": "Fundrate für Zomboxivir.",
+    "Sandbox_TheyKnew_ZomboxivirLootChance_tooltip": "Drop-Chance von 100",
+    "Sandbox_TheyKnew_TestKitLootChance": "Fundrate für Schnelltest Sets.",
+    "Sandbox_TheyKnew_TestKitLootChance_tooltip": "Drop-Chance von 100"
+}

@@ -1,0 +1,8 @@
+id=TheyKnew_B42_19_Fix
+name=They Knew [B42] - 42.19 Fix
+description=Compatibility patch for build 42.19 (Type->ItemType, body location registration).
+pzversion=42
+modversion=1.1.0
+versionMin=42.19.0
+author=Afterworlds+Reno98
+require=\TheyKnewB42

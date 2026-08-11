@@ -1,0 +1,9 @@
+{
+    "Tooltip_Zomboxolone": "Treats the zombie virus, but cannot cure it. Gives you more time before you turn.",
+    "Tooltip_Zomboxivir": "Inhaled vapor in a glass tube, cures a zombie virus infection.",
+    "Tooltip_Zomboxycycline": "Prevents the zombie virus from infecting you for 24 hours.",
+    "Tooltip_ViralTestingKit": "Contains up to 10 test strips used to test for the Knox virus.",
+    "Tooltip_ViralTestingStrip": "Test strip used to test for the Knox virus.",
+    "Tooltip_ViralTestingStripPositive": "A used Knox virus test strip. Whoever used it is going to have a bad time.",
+    "Tooltip_ViralTestingStripNegative": "A used Knox virus test strip. It found no traces of the virus in its user."
+}

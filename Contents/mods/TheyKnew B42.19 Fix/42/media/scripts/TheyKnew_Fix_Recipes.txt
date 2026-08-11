@@ -1,0 +1,23 @@
+module TheyKnew {
+
+	imports
+	{
+		Base
+	}
+	
+	craftRecipe GetATestStrip
+	{
+        timedAction = Making,
+		Time = 15,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous,
+		inputs
+		{
+			item 1 [TheyKnew.ViralTestingKit],
+		}
+		outputs
+		{
+			item 1 TheyKnew.ViralTestingStrip,
+		}
+	}
+}
