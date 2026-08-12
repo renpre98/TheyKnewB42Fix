@@ -12,3 +12,5 @@ If you spot any other issues/bugs with They Knew, let me know and I will try to 
 In your load order it has to be loaded after "They Knew [B42]" otherwise it will not work.
 
 Before I forget. @Afterworlds If you are not ok with my mod please let me know and I will take it down asap.
+
+Regarding everybody else who wants to use this mod or parts of it in own creations. You may use everything but have to give credit to me and Afterworlds when doing so
