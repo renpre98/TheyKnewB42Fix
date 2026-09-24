@@ -1,13 +1,15 @@
 version=1
 id=3750289416
 title=They Knew [B42] - 42.19 Fix
-description=Compatibility patch for build 42.19 (Type->ItemType, body location registration).
+description=Compatibility patch for build 42.19 and above (Type->ItemType, body location registration).
 description=
 description=The Zomboxivir is tested in Multiplayer (One player connected to a dedicated server)
 description=
 description=Also a "instant death" bug should now be fixed along with the english and german translations working again/added
 description=
 description=Apart from the initial fix itself I took the opportunity to get the virus test assets to work. They have to be enabled like the other meds and upon use show if a player is infected.
+description=
+description=Update 1.2.0 - multiplayer medication fix: on a dedicated server the infection is simulated by the server only, and timed actions complete server-side, so the meds have to run there too. Zomboxycycline was armed and watched purely client-side and therefore did nothing - players died of an infection they had taken it against. The buff is now armed and monitored on the server as well (and the cure is pushed back to the client), the Zomboxolone/Zomboxycycline messages no longer fire twice, and the viral test strip is only created server-side so it is a real item instead of a phantom copy.
 description=
 description=If you spot any other issues/bugs with They Knew, let me know and I will try to fix them.
 description=
